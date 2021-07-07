@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +13,25 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+* {
+  margin: 1;
+}
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+.floats {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+* {
+  color: #1e1d2c;
 }
