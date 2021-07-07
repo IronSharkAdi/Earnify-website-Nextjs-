@@ -9,19 +9,13 @@ export default function Home() {
     <title>Earnify</title>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </Head>
     <div >
        <nav id="header" className="fixed w-full z-30 top-0 text-white">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            {/* <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-              <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
-              <path
-                className="plane-take-off"
-                d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
-              />
-            </svg> */}
             <Image height={40} width={40} src="/main_logo.png" alt="Earnify logo" /> <span style={{color:"#f87e97"}}>arnify</span> 
           </a>
         </div>
@@ -96,15 +90,7 @@ export default function Home() {
         </g>
       </svg>
     </div>
-    {/* <section  className="bg-white border-b py-8">
-        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Our Affiliates
-        </h1>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" ></div>
-        </div>
 
-    </section> */}
    
     <section className="bg-white border-b py-8">
       <div className="container mx-auto flex flex-wrap pt-4 pb-12">
@@ -176,87 +162,7 @@ export default function Home() {
         </div>
       </div>
     </section>
-    {/* <section className="bg-gray-100 py-8">
-      <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-        <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Pricing
-        </h1>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div className="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
-          <div className="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
-            <div className="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-              <div className="p-8 text-3xl font-bold text-center border-b-4">
-                Free
-              </div>
-              <ul className="w-full text-center text-sm">
-                <li className="border-b py-4">Thing</li>
-                <li className="border-b py-4">Thing</li>
-                <li className="border-b py-4">Thing</li>
-              </ul>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-                £0
-                <span className="text-base">for one user</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Sign Up
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
-            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <div className="w-full p-8 text-3xl font-bold text-center">Basic</div>
-              <div className="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-              <ul className="w-full text-center text-base font-bold">
-                <li className="border-b py-4">Thing</li>
-                <li className="border-b py-4">Thing</li>
-                <li className="border-b py-4">Thing</li>
-                <li className="border-b py-4">Thing</li>
-              </ul>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="w-full pt-6 text-4xl font-bold text-center">
-                £x.99
-                <span className="text-base">/ per user</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Sign Up
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
-            <div className="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-              <div className="p-8 text-3xl font-bold text-center border-b-4">
-                Pro
-              </div>
-              <ul className="w-full text-center text-sm">
-                <li className="border-b py-4">Thing</li>
-                <li className="border-b py-4">Thing</li>
-                <li className="border-b py-4">Thing</li>
-              </ul>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-                £x.99
-                <span className="text-base">/ per user</span>
-              </div>
-              <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Sign Up
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
+
     <svg className="wave-top gradient" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fillRule="nonzero">
@@ -387,10 +293,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <a href="https://www.freepik.com/free-photos-vectors/background" className="text-gray-500">Background vector created by freepik - www.freepik.com</a>
     </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     </div>
     </>
   )
